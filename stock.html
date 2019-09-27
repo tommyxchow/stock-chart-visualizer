@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <title>{{name1}} Stock</title>
+  <h1>{{name1}} {{name2}}</h1>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js">
+
+	</script>
+	<script src="stockvis.js">
+
+	</script>
+</head>
+
+<body onload="load('{{name1}}', '{{name2}}');">
+
+	<div id="chart"></div>
+	<button id = "backButton" onclick="goBack('{{name1}}');">Home</button>
+  <button id = "1Day" onclick="set1Day('{{name1}}');">Today</button>
+  <button id = "1Month" onclick="set1Month('{{name1}}');">1 Month</button>
+  <button id = "6Month" onclick="set6Month('{{name1}}');">6 Months</button>
+  <button id = "1Year" onclick="set1Year('{{name1}}');">1 Year</button>
+  <button id = "5Year" onclick="set5Year('{{name1}}');">5 Years</button>
+
+  Enter Stock Ticker:
+  <input type="text" id="boxtext"/>
+  <button id = "myButton" onclick="clicky();">Ok</button>
+
+  <div id="bar"></div>
+
+<script src="script.js">
+</script>
+
+
+
+</body>
+
+</html>
